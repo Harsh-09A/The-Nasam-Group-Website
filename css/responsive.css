@@ -20257,7 +20257,8 @@
     display: flex;
   }
   header .hamburger-push-button.icon span {
-    background-color: var(--dark-gray);
+    /* background-color: var(--dark-gray); */
+    background-color: var(--white);
   }
   header .hamburger-push-button .push-button-text {
     color: var(--dark-gray) !important;

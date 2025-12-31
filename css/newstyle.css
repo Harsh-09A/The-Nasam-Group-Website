@@ -1,32 +1,24 @@
-.btn-gradient-emerald-blue-emerald-green {
-  background: linear-gradient(135deg, #6d4a2a 0%, #6d4a2a 100%);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-.btn-gradient-emerald-blue-emerald-green:hover {
-  background: linear-gradient(135deg, #6d4a2a 0%, #6d4a2a 100%);
-}
-
 #middleHeader {
   width: 100%;
   transition: all 0.3s ease;
-  z-index: 999;
+  z-index: 99;
+
 }
 
-.sticky-active {
+.sticky-activate {
   position: fixed;
-  top: 0;
+  top: 85px;
   left: 0;
 }
 
-.sticky-active {
+.sticky-activate {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
-
 body {
   scroll-behavior: smooth;
 }
+
+/* #middleHeader nav{
+    flex-wrap: nowrap;
+    overflow: scroll;
+} */

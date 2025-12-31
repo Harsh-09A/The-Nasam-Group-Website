@@ -35,20 +35,21 @@
     <link rel="stylesheet" href="css/icon.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="demos/architecture/architecture.css" />
+    <link rel="stylesheet" href="css/newstyle.css" />
+
   </head>
   <body data-mobile-nav-style="classic" class="custom-cursor">
     <!-- start cursor -->
-    <div class="cursor-page-inner">
+    <!-- <div class="cursor-page-inner">
       <div class="circle-cursor circle-cursor-inner"></div>
       <div class="circle-cursor circle-cursor-outer"></div>
-    </div>
+    </div> -->
     <!-- end cursor -->
     <!-- start header -->
     <header>
       <!-- start navigation -->
       <nav
-        class="navbar navbar-expand-lg header-transparent bg-transparent disable-fixed">
+        class="navbar navbar-expand-lg header-transparent bg-black responsive-sticky">
         <div class="container-fluid">
           <div class="col-auto col-lg-2 me-lg-0 me-auto d-none d-lg-flex">
             <div class="header-icon">
@@ -258,7 +259,6 @@
     </header>
     <!-- end header -->
 
-    <!--  -->
     <!-- start section -->
     <section class="p-0 bg-dark-gray">
       <div
@@ -333,6 +333,19 @@
       </div>
     </section>
     <!-- end section -->
+
+    <!-- Header placed in middle -->
+    <header id="middleHeader" class="bg-base-color text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <nav class="w-100">
+          <a href="#" class="text-white me-3">Home</a>
+          <a href="#" class="text-white me-3">About</a>
+          <a href="#" class="text-white me-3">Services</a>
+          <a href="#" class="text-white me-3">Projects</a>
+          <a href="#" class="text-white me-3">Contact</a>    
+        </nav>
+      </div>
+    </header>
 
     <!-- start section -->
     <section
@@ -1528,5 +1541,6 @@
       src="revolution/js/jquery.themepunch.revolution.min.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
