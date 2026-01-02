@@ -18,7 +18,15 @@ body {
   scroll-behavior: smooth;
 }
 
-/* #middleHeader nav{
+/* #middleHeader .nav{
     flex-wrap: nowrap;
-    overflow: scroll;
 } */
+
+#middleHeader .nav li a{
+  color: white;
+  text-transform: uppercase;
+}
+
+header .navbar {
+    height: 85px;
+}
