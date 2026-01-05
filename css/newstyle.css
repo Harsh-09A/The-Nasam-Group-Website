@@ -1,3 +1,11 @@
+/* Backgrounds */
+.section_bg_theme{
+  /* background: linear-gradient(180deg, #FFF 0%, #FFF 65%, #f0ece7 65%, #f0ece7 100%); */
+  background-color: #f0ece7 !important;
+
+}
+
+
 #middleHeader {
   width: 100%;
   transition: all 0.3s ease;
@@ -29,4 +37,12 @@ body {
 
 header .navbar {
     height: 85px;
+}
+
+header nav {
+    transition: background-color 0.3s ease;
+}
+
+header.sticky.sticky-active nav {
+    background-color: #fff;
 }

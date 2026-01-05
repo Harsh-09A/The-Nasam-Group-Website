@@ -8712,10 +8712,12 @@ header.sticky .navbar.disable-fixed {
 .header-icon .icon > a {
   padding-left: 16px;
   font-size: 17px;
-  color: var(--white);
+  /* color: var(--white); */
+  color: var(--base-color);
 }
 .header-icon .icon > a:hover {
-  color: var(--white);
+  /* color: var(--white); */
+  color: var(--base-color);
   opacity: 0.6;
 }
 .header-icon .icon:first-child a:first-child {
@@ -8981,6 +8983,7 @@ header a.widget-text:hover {
 }
 .header-push-button .push-button span {
   background: var(--white);
+  background: var(--base-color);
   height: 2px;
   width: 22px;
   content: "";
