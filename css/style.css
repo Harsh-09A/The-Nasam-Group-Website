@@ -9912,7 +9912,8 @@ header.sticky .left-sidebar-nav .navbar-nav .nav-link {
   opacity: 0.6;
 }
 .hamburger-logo img {
-  max-height: 45px;
+  /* max-height: 45px; */
+  max-height: 70px;
 }
 /* Right push menu */
 .right-push-menu .menu-item-list .menu-item .toggle {
