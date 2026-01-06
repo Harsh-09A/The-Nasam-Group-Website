@@ -239,26 +239,35 @@
 
     <!-- start section -->
     <section class="position-relative overflow-hidden p-0">
-      <div class="container">
+      <div class="col-md-12">
         <div
-          class="row align-items-center h-850px lg-h-650px md-h-500px text-center justify-content-center">
-          <div class="col-12 position-relative">
-            <!-- <h3 class="text-white fw-600 ls-minus-1px text-shadow-extra-large">
-              Self-hosted background video
-            </h3> -->
+          class="swiper swiper-number-pagination-style-01"
+          data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-number", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 5000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'
+          data-number-pagination="1"
+          data-anime-text='{ "translateY": [50,0], "opacity": [0,1], "easing": "easeOutQuad", "duration": 500, "delay": { "staggervalue": 20 } }'>
+          <div class="swiper-wrapper align-items-center">
+            <!-- start carousal item -->
+            <div class="swiper-slide border-radius-6px overflow-hidden">
+              <img src="images/projects/darul-aman-banner-1.jpg" alt="" />
+            </div>
+            <!-- end carousal item -->
+            <!-- start carousal item -->
+            <div class="swiper-slide border-radius-6px overflow-hidden">
+              <img src="images/projects/darul-aman-banner-1.jpg" alt="" />
+            </div>
+            <!-- end carousal item -->
+            <!-- start carousal item -->
+            <div class="swiper-slide border-radius-6px overflow-hidden">
+              <img src="images/projects/darul-aman-banner-1.jpg" alt="" />
+            </div>
+            <!-- end carousal item -->
           </div>
+          <!-- start slider pagination -->
+          <div
+            class="swiper-pagination container right-0px text-center swiper-pagination-clickable swiper-number fs-14 xs-w-100"></div>
+          <!-- end slider pagination -->
         </div>
       </div>
-      <video
-        loop=""
-        autoplay=""
-        playsinline
-        muted
-        class="html-video"
-        poster="images/home/NASAM_Slider_AMAN_1.jpg">
-        <source type="video/mp4" src="videos/home_banner.mp4" />
-        <!-- <source type="video/webm" src="video/video.webm" /> -->
-      </video>
     </section>
     <!-- end section -->
 
@@ -267,7 +276,19 @@
       <div class="container d-flex justify-content-between align-items-center">
         <ul class="nav w-100 justify-content-center">
           <li class="me-3">
-            <a href="#blogSection">Blogs</a>
+            <a href="#description">Description</a>
+          </li>
+          <li class="me-3">
+            <a href="#highlights">Highlights</a>
+          </li>
+          <li class="me-3">
+            <a href="#specification">Specification</a>
+          </li>
+          <li class="me-3">
+            <a href="#location">Location</a>
+          </li>
+          <li class="me-3">
+            <a href="#amenities">Amenities</a>
           </li>
         </ul>
       </div>
@@ -275,265 +296,363 @@
     <!-- Header placed in middle End -->
 
     <!-- start section -->
-    <section id="blogSection" class="pt-0 ps-4 pe-4 xl-ps-2 xl-pe-2 lg-px-0">
-      <div class="container-fluid">
+    <section class="position-relative p-1">
+      <div class="container">
+        <h3 class="alt-font fw-600 text-base-color text-uppercase text-center">
+          Darul Amaan
+        </h3>
+      </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start section -->
+    <section class="position-relative pt-0">
+      <div class="container">
         <div class="row">
-          <div class="col-12">
-            <ul
-              class="blog-side-image blog-wrapper grid-loading grid grid-3col xxl-grid-2col xl-grid-2col lg-grid-2col md-grid-1col sm-grid-1col xs-grid-1col gutter-extra-large">
-              <li class="grid-sizer"></li>
-              <!-- start blog item -->
-              <li class="grid-item">
-                <div
-                  class="blog-box d-md-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
+          <div class="col-lg-12 md-mb-50px">
+            <!-- Description -->
+            <div id="description" class="row mb-15px">
+              <div class="col-12">
+                <span
+                  class="text-dark-gray fs-24 fw-600 alt-font mb-15px d-block"
+                  >Property description</span
+                >
+                <p>
+                  Darul Amaan - The Gateway to Peace. A tranquil heaven in the
+                  midst of a bustling city. Darul Amaan features world class
+                  apartments with a combination of luxury and affordability,
+                  well equipped with all the facilities required for a
+                  comfortable life to put your mind at ease.
+                </p>
+              </div>
+            </div>
+
+            <!-- Highlights -->
+            <div id="highlights" class="row g-0">
+              <div
+                class="col bg-very-light-gray p-35px lg-ps-15px lg-pe-15px border-radius-6px fs-16">
+                <div class="row row-cols-2 row-cols-md-4 row-cols-sm-2">
                   <div
-                    class="blog-image w-50 sm-w-100 cover-background"
-                    style="
-                      background-image: url('https://picsum.photos/1000/1000?random=1');
-                    ">
-                    <a
-                      href="single-blog.html"
-                      class="blog-post-image-overlay"></a>
+                    class="col text-center border-end border-color-extra-medium-gray sm-mb-30px">
+                    <img
+                      src="images/demo-real-estate-icon-bed.svg"
+                      class="w-50px mb-15px"
+                      alt="" />
+                    <span class="text-dark-gray d-block lh-20">1,2 BHK</span>
                   </div>
                   <div
-                    class="blog-content w-50 sm-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-30px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
-                    <a
-                      href="single-blog.html"
-                      class="categories-btn bg-dark-gray text-white text-uppercase fw-500 mb-30px"
-                      >Creative</a
-                    >
-                    <a
-                      href="single-blog.html"
-                      class="card-title text-dark-gray text-dark-gray-hover mb-5px fw-600 fs-18 lh-28"
-                      >Creativity is nothing but a mind set free.</a
-                    >
-                    <p>Lorem ipsum is simply text of the printing...</p>
-                    <div class="mt-15px">
-                      <span class="separator bg-dark-gray"></span
-                      ><a
-                        href="single-blog.html"
-                        class="text-dark-gray text-dark-gray-hover d-inline-block fs-15 fw-500 fw-500"
-                        >NASM</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- end blog item -->
-              <!-- start blog item -->
-              <li class="grid-item">
-                <div
-                  class="blog-box d-md-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
-                  <div
-                    class="blog-image w-50 sm-w-100 cover-background"
-                    style="
-                      background-image: url('https://picsum.photos/1000/1000?random=2');
-                    ">
-                    <a
-                      href="single-blog.html"
-                      class="blog-post-image-overlay"></a>
+                    class="col text-center border-end sm-border-end-0 border-color-extra-medium-gray sm-mb-30px">
+                    <img
+                      src="images/demo-real-estate-icon-size.svg"
+                      class="w-50px mb-15px"
+                      alt="" />
+                    <span class="text-dark-gray d-block lh-20">500 Sq.Ft</span>
                   </div>
                   <div
-                    class="blog-content w-50 sm-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-30px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
-                    <a
-                      href="single-blog.html"
-                      class="categories-btn bg-dark-gray text-white text-uppercase fw-500 mb-30px"
-                      >Creative</a
+                    class="col text-center border-end border-color-extra-medium-gray">
+                    <img
+                      src="images/demo-real-estate-icon-car.svg"
+                      class="w-50px mb-15px"
+                      alt="" />
+                    <span class="text-dark-gray d-block lh-20">
+                      Parking Available</span
                     >
-                    <a
-                      href="single-blog.html"
-                      class="card-title text-dark-gray text-dark-gray-hover mb-5px fw-600 fs-18 lh-28"
-                      >Creativity is nothing but a mind set free.</a
-                    >
-                    <p>Lorem ipsum is simply text of the printing...</p>
-                    <div class="mt-15px">
-                      <span class="separator bg-dark-gray"></span
-                      ><a
-                        href="single-blog.html"
-                        class="text-dark-gray text-dark-gray-hover d-inline-block fs-15 fw-500 fw-500"
-                        >NASM</a
-                      >
-                    </div>
+                  </div>
+                  <div class="col text-center">
+                    <img
+                      src="images/demo-real-estate-icon-condominium.svg"
+                      class="w-50px mb-15px"
+                      alt="" />
+                    <span class="text-dark-gray d-block lh-20">10 Storey</span>
                   </div>
                 </div>
-              </li>
-              <!-- end blog item -->
-              <!-- start blog item -->
-              <li class="grid-item">
+              </div>
+            </div>
+
+            <!-- Specification -->
+            <div id="specification" class="row mt-7">
+              <div class="col-12">
+                <span
+                  class="text-dark-gray fs-24 fw-600 alt-font mb-25px d-block"
+                  >Specification</span
+                >
+              </div>
+              <!--  -->
+              <div class="col-xl-6">
+                <!-- start features box item -->
                 <div
-                  class="blog-box d-md-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
-                  <div
-                    class="blog-image w-50 sm-w-100 cover-background"
-                    style="
-                      background-image: url('https://picsum.photos/1000/1000?random=3');
-                    ">
-                    <a
-                      href="single-blog.html"
-                      class="blog-post-image-overlay"></a>
-                  </div>
-                  <div
-                    class="blog-content w-50 sm-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-30px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
-                    <a
-                      href="single-blog.html"
-                      class="categories-btn bg-dark-gray text-white text-uppercase fw-500 mb-30px"
-                      >Creative</a
-                    >
-                    <a
-                      href="single-blog.html"
-                      class="card-title text-dark-gray text-dark-gray-hover mb-5px fw-600 fs-18 lh-28"
-                      >Creativity is nothing but a mind set free.</a
-                    >
-                    <p>Lorem ipsum is simply text of the printing...</p>
-                    <div class="mt-15px">
-                      <span class="separator bg-dark-gray"></span
-                      ><a
-                        href="single-blog.html"
-                        class="text-dark-gray text-dark-gray-hover d-inline-block fs-15 fw-500 fw-500"
-                        >NASM</a
-                      >
+                  class="row g-0 align-items-center mb-15px pb-15px border-bottom border-color-extra-medium-gray">
+                  <div class="col">
+                    <div
+                      class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                      <div class="feature-box-content">
+                        <span class="text-dark-gray">RERA No:</span>
+                      </div>
                     </div>
                   </div>
+                  <div class="col">P51700015965</div>
                 </div>
-              </li>
-              <!-- end blog item -->
-              <!-- start blog item -->
-              <li class="grid-item">
+                <!-- end features box item -->
+
+                <!-- start features box item -->
                 <div
-                  class="blog-box d-md-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
-                  <div
-                    class="blog-image w-50 sm-w-100 cover-background"
-                    style="
-                      background-image: url('https://picsum.photos/1000/1000?random=4');
-                    ">
-                    <a
-                      href="single-blog.html"
-                      class="blog-post-image-overlay"></a>
-                  </div>
-                  <div
-                    class="blog-content w-50 sm-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-30px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
-                    <a
-                      href="single-blog.html"
-                      class="categories-btn bg-dark-gray text-white text-uppercase fw-500 mb-30px"
-                      >Creative</a
-                    >
-                    <a
-                      href="single-blog.html"
-                      class="card-title text-dark-gray text-dark-gray-hover mb-5px fw-600 fs-18 lh-28"
-                      >Creativity is nothing but a mind set free.</a
-                    >
-                    <p>Lorem ipsum is simply text of the printing...</p>
-                    <div class="mt-15px">
-                      <span class="separator bg-dark-gray"></span
-                      ><a
-                        href="single-blog.html"
-                        class="text-dark-gray text-dark-gray-hover d-inline-block fs-15 fw-500 fw-500"
-                        >NASM</a
-                      >
+                  class="row g-0 align-items-center mb-15px pb-15px border-bottom border-color-extra-medium-gray">
+                  <div class="col">
+                    <div
+                      class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                      <div class="feature-box-content">
+                        <span class="text-dark-gray">Property type:</span>
+                      </div>
                     </div>
                   </div>
+                  <div class="col">Appartment</div>
                 </div>
-              </li>
-              <!-- end blog item -->
-              <!-- start blog item -->
-              <li class="grid-item">
+                <!-- end features box item -->
+
+                <!-- start features box item -->
                 <div
-                  class="blog-box d-md-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
-                  <div
-                    class="blog-image w-50 sm-w-100 cover-background"
-                    style="
-                      background-image: url('https://picsum.photos/1000/1000?random=5');
-                    ">
-                    <a
-                      href="single-blog.html"
-                      class="blog-post-image-overlay"></a>
-                  </div>
-                  <div
-                    class="blog-content w-50 sm-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-30px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
-                    <a
-                      href="single-blog.html"
-                      class="categories-btn bg-dark-gray text-white text-uppercase fw-500 mb-30px"
-                      >Creative</a
-                    >
-                    <a
-                      href="single-blog.html"
-                      class="card-title text-dark-gray text-dark-gray-hover mb-5px fw-600 fs-18 lh-28"
-                      >Creativity is nothing but a mind set free.</a
-                    >
-                    <p>Lorem ipsum is simply text of the printing...</p>
-                    <div class="mt-15px">
-                      <span class="separator bg-dark-gray"></span
-                      ><a
-                        href="single-blog.html"
-                        class="text-dark-gray text-dark-gray-hover d-inline-block fs-15 fw-500 fw-500"
-                        >NASM</a
-                      >
+                  class="row g-0 align-items-center mb-15px pb-15px border-bottom border-color-extra-medium-gray">
+                  <div class="col">
+                    <div
+                      class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                      <div class="feature-box-content">
+                        <span class="text-dark-gray">Property size:</span>
+                      </div>
                     </div>
                   </div>
+                  <div class="col">500 Sq Ft</div>
                 </div>
-              </li>
-              <!-- end blog item -->
-              <!-- start blog item -->
-              <li class="grid-item">
+                <!-- end features box item -->
+
+                <!-- start features box item -->
                 <div
-                  class="blog-box d-md-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
-                  <div
-                    class="blog-image w-50 sm-w-100 cover-background"
-                    style="
-                      background-image: url('https://picsum.photos/1000/1000?random=6');
-                    ">
-                    <a
-                      href="single-blog.html"
-                      class="blog-post-image-overlay"></a>
-                  </div>
-                  <div
-                    class="blog-content w-50 sm-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-30px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
-                    <a
-                      href="single-blog.html"
-                      class="categories-btn bg-dark-gray text-white text-uppercase fw-500 mb-30px"
-                      >Creative</a
-                    >
-                    <a
-                      href="single-blog.html"
-                      class="card-title text-dark-gray text-dark-gray-hover mb-5px fw-600 fs-18 lh-28"
-                      >Creativity is nothing but a mind set free.</a
-                    >
-                    <p>Lorem ipsum is simply text of the printing...</p>
-                    <div class="mt-15px">
-                      <span class="separator bg-dark-gray"></span
-                      ><a
-                        href="single-blog.html"
-                        class="text-dark-gray text-dark-gray-hover d-inline-block fs-15 fw-500 fw-500"
-                        >NASM</a
-                      >
+                  class="row g-0 align-items-center mb-15px pb-15px border-bottom border-color-extra-medium-gray">
+                  <div class="col">
+                    <div
+                      class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                      <div class="feature-box-content">
+                        <span class="text-dark-gray">Location:</span>
+                      </div>
                     </div>
                   </div>
+                  <div class="col">Thane</div>
                 </div>
-              </li>
-              <!-- end blog item -->
-            </ul>
+                <!-- end features box item -->
+              </div>
+
+              <!--  -->
+              <div class="col-xl-6">
+                <!-- start features box item -->
+                <div
+                  class="row g-0 align-items-center mb-15px pb-15px border-bottom border-color-extra-medium-gray">
+                  <div class="col">
+                    <div
+                      class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                      <div class="feature-box-content">
+                        <span class="text-dark-gray">Configuration:</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">1 & 2 BHK</div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div
+                  class="row g-0 align-items-center mb-15px pb-15px border-bottom border-color-extra-medium-gray">
+                  <div class="col">
+                    <div
+                      class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                      <div class="feature-box-content">
+                        <span class="text-dark-gray">Zip Code:</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">400612</div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div
+                  class="row g-0 align-items-center mb-15px pb-15px border-bottom border-color-extra-medium-gray">
+                  <div class="col">
+                    <div
+                      class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                      <div class="feature-box-content">
+                        <span class="text-dark-gray">Property Status:</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">Completed</div>
+                </div>
+                <!-- end features box item -->
+
+                <!-- start features box item -->
+                <div
+                  class="row g-0 align-items-center mb-15px pb-15px border-bottom border-color-extra-medium-gray">
+                  <div class="col">
+                    <div
+                      class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                      <div class="feature-box-content">
+                        <span class="text-dark-gray">Property Category:</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">Residential</div>
+                </div>
+                <!-- end features box item -->
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div id="location" class="row mt-7">
+              <div class="col-12">
+                <span
+                  class="text-dark-gray fs-24 fw-600 alt-font mb-25px d-block"
+                  >Location</span
+                >
+              </div>
+              <div class="col-12">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1884.4827089170622!2d73.036106!3d19.152991!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf0002c2d705%3A0x5de912152d62ec95!2sNasam%20darul%20Aman!5e0!3m2!1sen!2sin!4v1767701388035!5m2!1sen!2sin"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <!-- Amenities -->
+            <div id="amenities" class="row mt-7">
+              <div class="col-12">
+                <span
+                  class="text-dark-gray fs-24 fw-600 alt-font mb-15px d-block"
+                  >Amenities</span
+                >
+              </div>
+              <div class="col-6 col-sm-4">
+                <!-- start list style -->
+                <ul class="list-style-02 ps-0 mb-0">
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i
+                    >Refrigerator
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i>Gym
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i>Washer
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i
+                    >Barbeque
+                  </li>
+                </ul>
+                <!-- end list style -->
+              </div>
+              <div class="col-6 col-sm-4">
+                <!-- start list style -->
+                <ul class="list-style-02 ps-0 mb-0">
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i>Hangers
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i
+                    >Microwave
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i>Sauna
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i>Dryer
+                  </li>
+                </ul>
+                <!-- end list style -->
+              </div>
+              <div class="col-6 col-sm-4">
+                <!-- start list style -->
+                <ul class="list-style-02 ps-0 mb-0">
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i>Laundry
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i>Shower
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i
+                    >Internet
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle icon-small me-10px"></i>Outdoor
+                  </li>
+                </ul>
+                <!-- end list style -->
+              </div>
+            </div>
+
+            <!-- <div class="row mt-7">
+              <div class="col-12">
+                <span
+                  class="text-dark-gray fs-24 fw-600 alt-font mb-25px d-block"
+                  >Ground floor plan</span
+                >
+                <img
+                  src="https://placehold.co/682x400"
+                  class="border-radius-6px"
+                  alt="" />
+              </div>
+            </div>
+            <div class="row mt-7">
+              <div class="col-12">
+                <span
+                  class="text-dark-gray fs-24 fw-600 alt-font mb-25px d-block"
+                  >First floor plan</span
+                >
+                <img
+                  src="https://placehold.co/682x400"
+                  class="border-radius-6px"
+                  alt="" />
+              </div>
+            </div> -->
           </div>
-          <!-- <div class="col-12 mt-4 d-flex justify-content-center">
-            <ul class="pagination pagination-style-01 fs-13 fw-500 mb-0">
-              <li class="page-item">
-                <a class="page-link" href="#"
-                  ><i
-                    class="feather icon-feather-arrow-left fs-18 d-xs-none"></i
-                ></a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">01</a></li>
-              <li class="page-item active">
-                <a class="page-link" href="#">02</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">03</a></li>
-              <li class="page-item"><a class="page-link" href="#">04</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#"
-                  ><i
-                    class="feather icon-feather-arrow-right fs-18 d-xs-none"></i
-                ></a>
-              </li>
-            </ul>
-          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start section -->
+    <section
+      data-parallax-background-ratio="0.5"
+      style="background-image: url('images/home/background.jpg')">
+      <div class="opacity-medium bg-slate-blue"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center justify-content-center">
+          <!-- start footer column -->
+          <div class="col-xl-6 text-center text-xl-start lg-mb-30px">
+            <h3 class="text-white mb-5px fw-500 ls-minus-1px">
+              Get a consultation services.
+            </h3>
+            <span class="fs-19 widget-text opacity-5 fw-300"
+              >We will take care of your property buying services.</span
+            >
+          </div>
+          <!-- end footer column -->
+          <!-- start footer column -->
+          <div class="col-xl-6 text-center text-xl-end">
+            <a
+              href="#"
+              class="btn btn-extra-large btn-white left-icon btn-box-shadow btn-rounded text-transform-none fw-600 primary-font ls-0px d-inline-block align-middle me-15px xs-m-10px"
+              ><i class="feather icon-feather-mail"></i>Free consultation</a
+            >
+            <a
+              href="tel:12345678910"
+              class="btn btn-extra-large btn-gradient-pink-orange left-icon btn-box-shadow btn-rounded fw-600 primary-font ls-0px d-inline-block align-middle xs-m-10px"
+              ><i class="feather icon-feather-phone-call"></i>+91 77109 00992</a
+            >
+          </div>
+          <!-- end footer column -->
         </div>
       </div>
     </section>
