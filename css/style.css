@@ -7824,7 +7824,8 @@ header .navbar-brand .mobile-logo {
   width: 0;
 }
 header .navbar-brand img {
-  max-height: 46px;
+  /* max-height: 46px; */
+  max-height: 70px;
 }
 header .header-top-bar {
   position: fixed;
