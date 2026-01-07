@@ -1,3 +1,10 @@
+.btn-gradient-blue-brown {
+  background-image: linear-gradient(to right, #936539, #123d75, #6d4a2a);
+  background-size: 200% auto;
+  color: var(--white);
+}
+
+
 /* Backgrounds */
 .section_bg_theme{
   /* background: linear-gradient(180deg, #FFF 0%, #FFF 65%, #f0ece7 65%, #f0ece7 100%); */
