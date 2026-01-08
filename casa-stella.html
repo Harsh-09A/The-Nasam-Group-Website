@@ -30,7 +30,12 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/newstyle.css" />
   </head>
-  <body data-mobile-nav-style="classic" class="">
+  <body
+    class=""
+    data-mobile-nav-style="classic"
+    data-bs-spy="scroll"
+    data-bs-target="#middleHeader"
+    data-bs-smooth-scroll="true">
     <!-- start header -->
     <header id="header">
       <!-- start navigation -->
@@ -278,23 +283,23 @@
     <!-- end section -->
 
     <!-- Header placed in middle Start -->
-    <header id="middleHeader" class="bg-base-color text-white py-3">
-      <div class="container d-flex justify-content-between align-items-center">
-        <ul class="nav w-100 justify-content-center">
-          <li class="me-3">
-            <a href="#description">Description</a>
+    <header id="middleHeader" class="bg-base-color text-white py-2">
+      <div class="container">
+        <ul class="nav middle-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link" href="#description">Description</a>
           </li>
-          <li class="me-3">
-            <a href="#highlights">Highlights</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#highlights">Highlights</a>
           </li>
-          <li class="me-3">
-            <a href="#specification">Specification</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#specification">Specification</a>
           </li>
-          <li class="me-3">
-            <a href="#location">Location</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#location">Location</a>
           </li>
-          <li class="me-3">
-            <a href="#amenities">Amenities</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#amenities">Amenities</a>
           </li>
         </ul>
       </div>

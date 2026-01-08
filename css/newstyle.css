@@ -103,12 +103,7 @@ header.sticky.sticky-active nav {
   height: 2px;
   background: #fff;
   border-radius: 2px;
-  transform: translateX(1%);
   transition: width 0.35s ease;
-  -webkit-transform: translateX(1%);
-  -moz-transform: translateX(1%);
-  -ms-transform: translateX(1%);
-  -o-transform: translateX(1%);
 }
 
 #middleHeader .nav-link.active::after {
