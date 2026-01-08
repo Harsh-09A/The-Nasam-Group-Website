@@ -9,6 +9,22 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// ScrollSpy refresh
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: "#middleHeader",
+  rootMargin: "0px 0px -50%",
+});
+
+document.addEventListener("activate.bs.scrollspy", function (e) {
+  const activeLink = e.target.querySelector(".nav-link.active");
+  if (activeLink) {
+    activeLink.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest",
+    });
+  }
+});
 
 // document.addEventListener("scroll", function () {
 //     const header = document.getElementById("header");
@@ -20,7 +36,6 @@ window.addEventListener("scroll", () => {
 //         nav.classList.remove("bg-white");
 //     }
 // });
-
 
 // document.addEventListener("scroll", function () {
 //     const header = document.getElementById("header");
@@ -40,4 +55,3 @@ window.addEventListener("scroll", () => {
 //         nav.classList.remove("bg-white");
 //     }
 // });
-

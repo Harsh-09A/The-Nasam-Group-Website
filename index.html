@@ -30,7 +30,12 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/newstyle.css" />
   </head>
-  <body data-mobile-nav-style="classic" class="">
+  <body
+    class=""
+    data-mobile-nav-style="classic"
+    data-bs-spy="scroll"
+    data-bs-target="#middleHeader"
+    data-bs-smooth-scroll="true">
     <!-- start header -->
     <header id="header">
       <!-- start navigation -->
@@ -263,20 +268,20 @@
     <!-- end section -->
 
     <!-- Header placed in middle Start -->
-    <header id="middleHeader" class="bg-base-color text-white py-3">
-      <div class="container d-flex justify-content-between align-items-center">
-        <ul class="nav w-100 justify-content-center">
-          <li class="me-3">
-            <a href="#aboutSection">About</a>
+    <header id="middleHeader" class="bg-base-color text-white py-2">
+      <div class="container">
+        <ul class="nav middle-nav-scroll justify-content-center">
+          <li class="nav-item ps-50px">
+            <a class="nav-link" href="#aboutSection">About</a>
           </li>
-          <li class="me-3">
-            <a href="#projectSection">Projects</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#projectSection">Projects</a>
           </li>
-          <li class="me-3">
-            <a href="#investSection">Invest</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#investSection">Invest</a>
           </li>
-          <li class="me-3">
-            <a href="#testimonialSection">Testimonial</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonialSection">Testimonial</a>
           </li>
         </ul>
       </div>

@@ -1,3 +1,5 @@
+/* Common CSS Start */
+
 .btn-gradient-blue-brown {
   background-image: linear-gradient(to right, #936539, #123d75, #6d4a2a);
   background-size: 200% auto;
@@ -8,40 +10,13 @@
   padding-top: 80px !important;
 }
 
-/* Backgrounds */
 .section_bg_theme {
-  /* background: linear-gradient(180deg, #FFF 0%, #FFF 65%, #f0ece7 65%, #f0ece7 100%); */
   background-color: #f0ece7 !important;
 }
 
-#middleHeader {
-  width: 100%;
-  transition: all 0.3s ease;
-  z-index: 99;
-}
+/* Common CSS Start */
 
-.sticky-activate {
-  position: fixed;
-  top: 85px;
-  left: 0;
-}
-
-.sticky-activate {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-body {
-  scroll-behavior: smooth;
-}
-
-/* #middleHeader .nav{
-    flex-wrap: nowrap;
-} */
-
-#middleHeader .nav li a {
-  color: white;
-  text-transform: uppercase;
-}
-
+/* Top Header Start */
 header .navbar {
   height: 85px;
 }
@@ -53,3 +28,91 @@ header nav {
 header.sticky.sticky-active nav {
   background-color: #fff;
 }
+/* Top Header End */
+
+/* NAV SCROLL FIX */
+.middle-nav-scroll {
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scroll */
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* Smooth mobile scrolling */
+  scrollbar-width: none; /* Firefox */
+}
+
+.middle-nav-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+/* Nav links */
+#middleHeader .nav-link {
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+}
+
+/* Center nav on desktop */
+@media (min-width: 768px) {
+  .middle-nav-scroll {
+    justify-content: center;
+  }
+}
+
+/* NAV SCROLL FIX END  */
+
+/* Middle Header Start */
+
+#middleHeader {
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+/* Sticky state */
+.sticky-activate {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sticky-activate {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#middleHeader .nav li a {
+  color: white;
+  text-transform: uppercase;
+}
+
+#middleHeader .nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+#middleHeader .nav-link.active {
+  color: #fff;
+}
+/* underline indicator */
+#middleHeader .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 0px;
+  width: 80%;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transform: translateX(1%);
+  transition: width 0.35s ease;
+  -webkit-transform: translateX(1%);
+  -moz-transform: translateX(1%);
+  -ms-transform: translateX(1%);
+  -o-transform: translateX(1%);
+}
+
+#middleHeader .nav-link.active::after {
+  width: 80%;
+}
+
+/* Middle Header End */
