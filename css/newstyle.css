@@ -28,21 +28,28 @@ header nav {
 header.sticky.sticky-active nav {
   background-color: #fff;
 }
+
 /* Top Header End */
 
 /* NAV SCROLL FIX */
 .middle-nav-scroll {
-  flex-wrap: nowrap; /* Prevent wrapping */
-  overflow-x: auto; /* Enable horizontal scroll */
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
+  overflow-x: auto;
+  /* Enable horizontal scroll */
   overflow-y: hidden;
   white-space: nowrap;
-  -webkit-overflow-scrolling: touch; /* Smooth mobile scrolling */
-  scrollbar-width: none; /* Firefox */
+  -webkit-overflow-scrolling: touch;
+  /* Smooth mobile scrolling */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .middle-nav-scroll::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
+  /* Chrome/Safari */
 }
+
 /* Nav links */
 #middleHeader .nav-link {
   color: white;
@@ -93,6 +100,7 @@ header.sticky.sticky-active nav {
 #middleHeader .nav-link.active {
   color: #fff;
 }
+
 /* underline indicator */
 #middleHeader .nav-link.active::after {
   content: "";
@@ -111,3 +119,73 @@ header.sticky.sticky-active nav {
 }
 
 /* Middle Header End */
+
+.modal-logo {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.enquiry-modal .modal-header {
+  position: relative;
+  padding: 30px 30px 10px;
+}
+
+.enquiry-modal .modal-title {
+  color: #222;
+}
+
+.enquiry-modal p {
+  font-size: 14px;
+}
+
+.enquiry-modal {
+  border: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.enquiry-modal .modal-header {
+  padding: 30px 30px 10px;
+}
+
+.enquiry-modal .modal-body {
+  padding: 25px 30px 30px;
+}
+
+.enquiry-modal .input-group-text {
+  background: #fff;
+  border-right: 0;
+  color: #0d6efd;
+}
+
+.enquiry-modal .form-control {
+  border-left: 0;
+  height: 55px;
+  box-shadow: none;
+}
+
+.enquiry-modal .form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.enquiry-modal .input-group:focus-within {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+  border-radius: 10px;
+}
+
+.enquiry-modal .btn {
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.enquiry-modal .btn:hover {
+  color: #222;
+  transform: translateY(-2px);
+}
+.enquiry-modal .input-group-text i{
+  color: var(--base-color);
+}
